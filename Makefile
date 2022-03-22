@@ -3,6 +3,7 @@
 default:
 	@echo "Usage:"
 	@echo "  make win"
+	@echo "  make linux"
 	@echo "  make mac"
 
 win:
