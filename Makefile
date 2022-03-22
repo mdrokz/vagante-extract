@@ -12,6 +12,13 @@ win:
 	stack install
 	cp $(shell stack exec which vagante-extract) win
 	strip win/vagante-extract.exe
+linux:
+	rm -rf linux
+	mkdir linux
+	cp app-readme.txt linux/readme.txt
+	stack install
+	cp $(shell stack exec which vagante-extract) linux
+	strip linux/vagante-extract
 
 mac:
 	rm -rf mac
